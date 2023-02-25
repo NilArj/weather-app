@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <title>Weather Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="search">
+      <input type="text" id="search-bar" placeholder="Search city name" />
+      <button id="btn" onclick="cityName()">
+        <img src="images/icons8-búsqueda-15.png" class="search-button" alt="search-img" />
+      </button>
+    </div>
+    <div class="weather loading">
+      <div class="weather-location">
+        <h1>Weather in <span class="city">Mexico</span></h1>
+        <img class="icon" src="" alt="weather-icon">
+      </div>
+      <div class="weather-description">
+        <h1 class="temp">51° C</h1>
+        <div class="description">Cloudy</div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2 km/h</div>
+      </div>
+
+    </div>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+
+</html>
